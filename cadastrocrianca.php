@@ -19,43 +19,52 @@
 
 <div class="container-fluid">
 		<div class="row">
-			<h1>Cadastre-se</h1>
 			<div class="col-sm-4 col-sm-offset-4">
 				
-				<h2>Vamos começar com os dados do responsável</h2>
+				<h2>Agora vamos cadastrar a criança!</h2>
 				
-				<form method="post" action="cadastrarresp.php" name="logon">
+				<form method="post" action="cadastrarcri.php" name="logon">
 				
 					<div class="form-group">				
-						<label for="nome">Nome</label>
-						<input name="txtnome" type="text" class="form-control" required id="nome">
+						<label for="cpfcri">CPF do responsável</label>
+						<input name="txtcpfcri" type="text" class="form-control" required id="cpfcri">
+					</div>	
+
+					<div class="form-group">				
+						<label for="nomecri">Nome</label>
+						<input name="txtnomecri" type="text" class="form-control" required id="nomecri">
 					</div>				
-				
-					
-					<div class="form-group">					
-							<label for="email">E-mail</label>
-							<input name="txtemail" type="email" class="form-control" required id="email">
-					</div>
 											
 					<div class="form-group">					
-							<label for="nascimento">Data de Nascimento</label>
-							<input name="txtnascimento" type="text" class="form-control" required id="nascimento"></input>
-					</div>
-						
+							<label for="nascimentocri">Data de Nascimento</label>
+							<input name="txtnascimentocri" type="text" class="form-control" required id="nascimentocri"></input>
+					</div>						
 						
 					<div class="form-group">					
-							<label for="cpf">CPF</label>
-							<input name="txtcpf" type="text" class="form-control" required id="cpf">
+							<label for="serie">Série</label>
+							<select name="txtserie" id="serie">
+							  <option value="ano 1">1º ano</option>
+							  <option value="ano 2">2º ano</option>
+							  <option value="ano 3">3º ano</option>
+							  <option value="ano 4">4º ano</option>
+							  <option value="ano 5">5º ano</option>
+							  <option value="ano 6">6º ano</option>
+							  <option value="ano 7">7º ano</option>
+							  <option value="ano 8">8º ano</option>
+							  <option value="ano 9">9º ano</option>
+							  <option value="outro">outro</option>
+
+							</select>
 					</div>
 						
 					<div class="form-group">
-							<label for="usuario">Nome de usuário</label>
-							<input name="txtusuario" type="text" class="form-control" required id="usuario">
+							<label for="usuariocri">Nome de usuário</label>
+							<input name="txtusuariocri" type="text" class="form-control" required id="usuariocri">
 					</div>
 
 					<div class="form-group">
-							<label for="senha">Senha</label>
-							<input name="txtsenha" type="password" class="form-control" required id="senha">
+							<label for="senhacri">Senha</label>
+							<input name="txtsenhacri" type="password" class="form-control" required id="senhacri">
 					</div>
 								
 					<button type="submit" class="btn btn-lg btn-default">
@@ -82,8 +91,8 @@
 	<script>
 	
 		$(document).ready(function(){
-		    $("#cpf").mask("000.000.000-00");
-   		    $("#nascimento").mask("00/00/0000");
+		    $("#cpfcri").mask("000.000.000-00");
+   		    $("#nascimentocri").mask("00/00/0000");
 
 		});			
 	

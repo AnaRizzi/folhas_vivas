@@ -26,6 +26,9 @@
 
         <!-- Menu que aparecerá para o responsável -->
         <li class="nav-item">
+          <a class="nav-link" href="#">Cadastrar criança</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">Ver atividades da criança</a>
         </li>
         <li class="nav-item">

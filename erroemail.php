@@ -22,13 +22,13 @@
 		
 			<div class="col-sm-4 col-sm-offset-4 text-center">
 				
-				<h2>Usuário ou senha incorreto!!</h2>
+				<h2>Email já cadastrado</h2>
 				
-				<a href="login.php" class="btn btn-block btn-default" role="button">Tentar Novamente</a>
+				<a href="javascript:history.back();" class="btn btn-block btn-default" role="button">Voltar para o cadastro</a>
 				
-				<a href="cadastro.php">
+				<a href="recuperar.php">
 				<button type="button" class="btn btn-lg btn-link">
-					Ainda não sou cadastrado					
+					Esqueci minha senha					
 				</button>
 				</a>
 							
