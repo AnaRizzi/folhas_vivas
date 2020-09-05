@@ -16,46 +16,37 @@
 		include 'conexao.php';
 		include 'menu.php';
 
-		if ($_SESSION['STATUS'] == 1){
-			//consulta para a criança
-			$consulta = $cn->query("select * from livro where categoria='Literatura infantojuvenil'");
-		}
-		else{
-			//consulta de tudo para o adulto
-			$consulta = $cn->query("select * from livro");
-		}
-		
+        if(!empty($_GET['cd'])){
+            $cd_livro = $_GET['cd'];
+            $consulta = $cn->query("select * from livro where id = '$cd_livro'");
+            $exibe = $consulta->fetch(PDO::FETCH_ASSOC);
+        }
+        else{
+            header("location:index.php");
+        }		
 	?>
 
 
-	<div class="container-fluid">
-	<h1>Bem-vindo ao portal da Árvore!</h1>
-
-		<div class="row">
-			<?php while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)){ ?>
-
-				<div class="col-sm-3 col-lg-2">
-					<div>
-					<a href="detalhes.php?cd=<?php echo $exibe['id']; ?>" ><img src="img/<?php echo $exibe['capa']; ?>" class="img-responsive" style="width: 100%"></a>
-					<h4><?php echo $exibe['nome']; ?></h4>
-					
-					<!--
-					<div class="text-center">
-						<a href="detalhes.php?cd=<?php echo $exibe['id']; ?>">
-							<button class="btn btn-lg btn-block btn-default">
-								<span class="glyphicon glyphicon-info-sign" style="color: cadetblue"> Detalhes</span>
-							</button>
-						</a>
-					</div>
-					-->
-					</div>
-				</div>
-
-			<?php } ?>
-			
+<div class="container-fluid">
+	<div class="row">		
+		 <div class="col-sm-4 col-sm-offset-1">			 
+			 <img src="img/<?php echo $exibe['capa']; ?>" class="img-responsive" style="width:100%;">
 		</div>
-	</div>
+				
+ 		<div class="col-sm-7"><h1><?php echo $exibe['nome'] ?></h1>
+		
+		<p><b>Autor:</b> <?php echo $exibe['autor'] ?></p>
+		<p><b>Editora:</b> <?php echo $exibe['editora'] ?></p>
 
+		<p><?php echo $exibe['descricao'] ?></p>
+		
+		<p><b>Tipo de leitor:</b> <?php echo $exibe['tipo_leitor'] ?></p>
+		<p><b>Idioma:</b> <?php echo $exibe['idioma'] ?></p>	 
+        <p><b>Categoria:</b> <?php echo $exibe['categoria'] ?></p>
+		<p><b>Temática:</b> <?php echo $exibe['tematica'] ?></p>	  
+						
+		</div>			
+</div>
 
 
 	<?php
