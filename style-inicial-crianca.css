@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    color: #888a8a;
+}
+
+body {
+    background-image: url(images/fundo_celular.png);
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-repeat: repeat;
+    text-align: center;
+}
+
+.cabecalho{
+    display: grid;
+    width: 100%;
+
+}
+ #mico-circulo{ 
+     width: 30%;
+     float: left;
+     margin: 3vh 0 3vh 8vw;
+ }
+
+ #local-nome {
+     width: 50%;
+     margin: 5vh 3% 10px 47%;
+     background-color: #324423 !important;
+     text-align: center;
+     border-radius: 10px;
+
+}
+
+ #nome {
+     margin: 5px 0 5px 0px;
+     font-size: 22px;
+     width: 50%;
+     background-color: #324423 !important;
+     color: white;
+     border-radius: 20px;
+ }
+
+ #local-nivel {
+     width: 20%;
+ }
+
+ #nivel {
+     position: absolute;
+     color: white;
+     font-size: 14px;
+     margin: 1.9vh -19vw;
+ }
+
+ #seta-nivel {
+     width: 3.5%;
+     margin: 0 2vw 1.6vh -6vw;
+ }
+
+ #fundo-moeda {
+     width: 19%;
+ }
+
+ #moedas {
+    position: absolute;
+    color:#486932;
+    font-size: 19px;
+    margin: 1.3vh -9vw;
+ }
+
+ #lapis-circulo {
+     width: 10%;
+     float: left;
+     margin: 13vh 0 3vh -8vw;
+
+ }
+
+#avent-dispon {
+    width: 14%;
+    position: absolute;
+    margin: -6vh -5.9vw;
+}
+
+#avent-anterior {
+    width: 14%;
+    position: absolute;
+    margin: -6vh -5.9vw
+}
+ 
+#config {
+    width: 14%;
+    position: absolute;
+    margin: -5vh -5.9vw
+}
+
+#miolo-config {
+    width: 100%;
+}
+
+#barra-busca {
+    width: 70%;
+    margin: -4vh 0 0 0;
+    border: 1px;
+    border-radius: 8px;
+}
+
+#barra-busca2 {
+    width: 70%;
+    margin: 4vh 0 0 0;
+    border: 1px;
+    border-radius: 8px;
+}
+
+#buscar-avent {
+    position: absolute;
+    font-size: 19px;
+    margin: -2.5vh -57vw;
+    color: #888a8a;
+}
+
+#buscar-config {
+    position: absolute;
+    font-size: 17px;
+    margin: 5.5vh -57vw;
+    color: #888a8a;
+}
+
+#sair{
+    margin-top: 10px;
+    margin-right: 10%;
+    text-align: right;
+}
+
+#sair a{
+    text-decoration: none;
+}
+
+.quadro-branco {
+    display: block;
+    width: 100%;
+    min-height: 495px;
+    background-color: white;
+    margin: 3vh 0 0 0;
+    border: solid 10px white;
+    text-align: center;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 0vw ;
+    text-align: center;
+    align-items: center;
+}
+
+.item {
+    width: 33%;
+    margin: 1vh;
+}
+
+.item_capa {
+    width: 30%;
+    margin: 1vh;
+}
+
+.item-m {
+    width: 40%;
+    margin: 1vh
+}
+
+#grama {
+    width: 100%;
+}
+
+#placa {
+    width: 18%;
+    float: right;
+    margin: 0 10vw -5vh 0;
+}
+
+#voltar {
+    width: 24%;
+    float: left;
+    margin: 0 0 -8vh 10vw;
+}
+
+footer {
+    position:fixed;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width:100%;
+    z-index: 1;
+}
+  
+@media screen and (max-width: 600px) {
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+}

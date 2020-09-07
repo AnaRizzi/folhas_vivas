@@ -14,19 +14,19 @@
 
 		if($exibeUsuario['nivel_acesso'] == 'responsavel gratis'){
 			$_SESSION['ID'] = $exibeUsuario['id_resp'];
-			$_SESSION['STATUS'] = 0;
+			$_SESSION['STATUS'] = 1;
 			$_SESSION['NOME'] = $exibeUsuario['nome_resp'];
 			header('location:portal.php');			
 		}
 		else if ($exibeUsuario['nivel_acesso'] == 'crianca gratis'){
 			$_SESSION['ID'] = $exibeUsuario['id_cri'];
-			$_SESSION['STATUS'] = 1;
+			$_SESSION['STATUS'] = 2;
 			$_SESSION['NOME'] = $exibeUsuario['nome_cri'];
 			header('location:portal.php');
 		}
 		else{
 			$_SESSION['ID'] = $exibeUsuario['id_resp'];
-			$_SESSION['STATUS'] = 2;
+			$_SESSION['STATUS'] = 3;
 			$_SESSION['NOME'] = 'Outro usuário';
 			header('location:portal.php');
 		}
@@ -35,6 +35,6 @@
 
 	
 	else{
-		header('location:erro.php');
+		header('location:erro.html');
 	}
 ?>
