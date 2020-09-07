@@ -247,6 +247,55 @@ footer {
 
 .btn_ler:hover {background-color: rgb(118, 170, 76)}
   
+.margem_top{
+    margin-top: 70px;
+}
+
+.container_livro{
+    overflow: hidden;
+    text-align:center;
+    padding-left: 15px;
+}
+
+.ler_livro{
+    -ms-zoom: 0.6;
+    -ms-transform-Origin: 0 0;
+    -moz-transform: scale(0.75);
+    -moz-transform-Origin: 0px 75px;
+    -o-transform: scale(0.75);
+    -o-transform-Origin: 0px 75px;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-Origin: 0 0;
+
+}
+
+.ler_livro{    
+    width: 130%;
+    min-height: 100vh;
+    border: none;
+    align: center;
+}
+
+.seta-direita{
+    position: absolute;
+    right: 5px;
+    top: 50vh;
+}
+
+#setaD{
+    width: 20px;
+}
+
+.seta-esquerda{
+    position: absolute;
+    left: 5px;
+    top: 50vh;
+}
+
+#setaE{
+    width: 20px;
+}
+
 @media screen and (max-width: 600px) {
 .col-25, .col-75, input[type=submit] {
     width: 100%;

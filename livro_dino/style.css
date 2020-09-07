@@ -1,0 +1,12 @@
+#animation_container {
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+
+}
+
+#canvas {
+    width: 100%;
+    margin: 0;
+    background-size: cover;  
+}

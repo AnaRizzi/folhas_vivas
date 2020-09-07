@@ -27,7 +27,7 @@
                 $exibe = $consulta->fetch(PDO::FETCH_ASSOC);
             }
             else{
-                header("location:index.php");
+                header("location:aventuras-disponiveis.php.php");
             }		
     ?>
 
@@ -55,7 +55,7 @@
             <p><b>Temática:</b> <?php echo $exibe['tematica'] ?></p>	
         </div>	
         <br/>
-        <a href="#"><button class="btn btn_ler">Ler agora</button></a>
+        <a href="livro.php"><button class="btn btn_ler">Ler agora</button></a>
       </div>
     </div>      
 
