@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folhas Vivas - Login</title>
+    <link rel="stylesheet" type="text/css" href="style-login.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="folhas-cantos-top">
+        <img src="images/folhas.png" class="folha-e">
+        <img src="images/folhas2.png" class="folha-d">
+    </div>
+
+    <form name="frmusuario" method="post" action="validausuario.php">
+
+        <section class="texto-login">
+            <p class="thin">
+                Bem vindo(a) de volta, </p>
+            <p class="bold">aventureiro (a)!</p> <br>
+            <span class="thin"> Pronto para continuar </span><span class="bold">viajando <br> para outros mundos <br>
+            </span><span class="thin">e viver</span> <span class="bold">aventuras incríveis?</span><br> <br>
+            <p class="thin">Bora lá fazer o login! </p><br> <br>
+            </p>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Nome de usuário</label>
+                </div>
+                <div class="col-75">
+                    <input name="txtusuario" type="text" class="form-control" required id="usuario">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="col-75">
+                    <input name="txtsenha" type="password" class="form-control" required id="senha">
+                </div>
+            </div>
+
+        </section>
+            <br/>
+            <button type="submit" class="button botao-entrar btn">						
+                LOGIN						
+            </button>
+
+            <p class="ou">
+                <br>
+                __________________ ou __________________ <br> <br>
+            </p>
+            <div>
+                <a href="cadastro.html" class="botao-cadastro btn">Cadastre-se</a>
+                <br>
+            </div>
+            <img id="fb" src="images/btn facebook.png"><br>
+            <img id="google" src="images/brn google.png">
+    </form>
+
+    <div class="folhas-cantos-bottom">
+        <img src="images/folhas4.png" class="folha-e">
+        <img src="images/folhas3.png" class="folha-d">
+    </div>
+</body>
+
+</html>

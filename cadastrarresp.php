@@ -18,19 +18,19 @@ $consultaemail = $cn->query("select email from usuario_responsavel where email='
 $consultausuario = $cn->query("select usuario from login where usuario='$usuario'");
 
 if($consultacpf->rowCount() == 1){
-	header('location:errocpf.php');
+	header('location:errocpf.html');
 }
 
 else if($consultaemail->rowCount() == 1){
-	header('location:erroemail.php');
+	header('location:erroemail.html');
 }
 
 else if($consultausuario->rowCount() == 1){
-	header('location:errousuario.php');
+	header('location:errousuario.html');
 }
 else{
 	$incluir = $cn->query("call cadastro_resp('$nome', '$nascimento', '$cpf', '$email', '$usuario', '$senha')");
-	header('location:cadastrocrianca.php');
+	header('location:cadastro-crianca.html');
 
 }
 

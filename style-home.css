@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #888a8a
+}
+
+body {
+    background-color: rgb(247,247,247);
+    text-align: center;
+}
+
+.imagens {
+    max-width: 90%;
+    align-content: center;
+}
+
+figure.banner-topo img {
+    width: 80%;
+    margin-top: 6vh;
+}
+
+.imagem-centro {
+    background-image: url(images/imagem_redonda.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 1vw;
+    margin: 4vh 1vw 0 1vw;
+    width: 95%;
+    height: 400px
+}
+
+#tuca {
+    width: 25%;
+    margin: 13vh 5vw 0 20vw
+}
+
+#mico{
+    width: 25%;
+    margin: 8vh 5vw 0 20vw
+
+}
+
+.button {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 10vw;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(100, 153, 65);
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    font-weight: 100;
+  }
+  
+.btn:hover {background-color: rgb(118, 170, 76)}
+  
+.btn:active {
+    background-color: rgb(126, 184, 88);
+    transform: translateY(4px); }
+
+.texto-cadastre {
+    
+    width: 80%;
+    font-size: 13px;
+    text-align: right;
+}

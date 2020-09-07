@@ -18,11 +18,11 @@ $consultacpf = $cn->query("select cpf from usuario_responsavel where cpf='$cpf'"
 $consultausuario = $cn->query("select usuario from login where usuario='$usuario'");
 
 if($consultacpf->rowCount() != 1){
-	header('location:errocpfresp.php');
+	header('location:errocpfresp.html');
 }
 
 else if($consultausuario->rowCount() == 1){
-	header('location:errousuario.php');
+	header('location:errousuario.html');
 }
 else{
 $consultaid = $cn->query("select id from usuario_responsavel where cpf='$cpf'");
@@ -30,7 +30,7 @@ $id = $consultaid->fetch(PDO::FETCH_ASSOC);
 $idresp = $id['id'];
 
 $incluir = $cn->query("call cadastro_crianca('$nome', '$nascimento', '$serie', '$avatar', '$idresp', '$usuario', '$senha')");
-	header('location:confirmacao.php');
+	header('location:confirmacao.html');
 
 }
 

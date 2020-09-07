@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folhas Vivas - Cadastro da criança</title>
+    <link rel="stylesheet" type="text/css" href="style-cadastr-crianca.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="cadastro-responsavel.js"></script>
+</head>
+<body class="body">
+    <div class="mico-topo">
+      <img src="images/cabeça mico.png" alt="mico" class="cabeca-mico">
+    </div>
+    <div class="quadro-branco"><!--
+    --><div class="braco-mico">
+            <img class="braco" src="images/braco mico.png" alt="braco mico">
+        </div>
+      <div class="cabecalho">
+          <figure id= "folha1" class="folhas">
+              <img class="img-folhas" src="images/folhas2.png" alt="folhas">
+          </figure>
+          <span id= "passaporte" class="folhas responsavel"> Passaporte de aventureiro (a) </span>
+          <figure id= "folha2"class="folhas">
+              <img class="img-folhas" src="images/folhas.png" alt="folhas">
+          </figure>
+      </div>
+
+
+      <div class="formulario">
+          <form method="post" action="cadastrarcri.php" name="logon">
+
+            <div class="row">
+              <div class="col-25">
+                <label for="cpfcri">CPF do responsável</label>
+              </div>
+              <div class="col-75">
+                <input name="txtcpfcri" type="text" required id="cpfcri">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="nomecri">Nome Completo</label>
+              </div>
+              <div class="col-75">
+                <input name="txtnomecri" type="text" required id="nomecri">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="nascimentocri">Data de nascimento</label>
+              </div>
+              <div class="col-75">
+                <input name="txtnascimentocri" type="text" required id="nascimentocri">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="serie">Série</label>
+              </div>
+              <div class="col-75">
+                <select name="txtserie" id="serie">
+                  <option value="ano 1">1º ano</option>
+                  <option value="ano 2">2º ano</option>
+                  <option value="ano 3">3º ano</option>
+                  <option value="ano 4">4º ano</option>
+                  <option value="ano 5">5º ano</option>
+                  <option value="ano 6">6º ano</option>
+                  <option value="ano 7">7º ano</option>
+                  <option value="ano 8">8º ano</option>
+                  <option value="ano 9">9º ano</option>
+                  <option value="outro">outro</option>  
+                </select>
+               </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="usuariocri">Nome de usuário</label>
+              </div>
+              <div class="col-75">
+                <input name="txtusuariocri" type="text" required id="usuariocri">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="senhacri">Senha</label>
+              </div>
+              <div class="col-75">
+                <input type="password" name="txtsenhacri" required id="senhacri">
+              </div>
+            </div>
+
+
+            <div class="carrossel">
+                <span id="avatar">AVATAR</span> <br>
+                <div class="imgCarrossel">
+                  <img id= "setaE" src="images/seta e.png" alt="seta para a esquerda">
+                  <img id="mico" src="images/mico.png" alt="mico">
+                  <img id="tuca" src="images/tuca.png" alt="tucano">
+                  <img id="mico" src="images/mico.png" alt="mico">
+                  <img id="setaD" src="images/seta d.png" alt="seta para a direita">
+                </div>
+            </div>
+
+            <div class="button">
+              <button type="submit" class=" botao-entrar btn">
+                Confirmar
+              </button>
+              <br/>
+              <br/>
+              <a href="login.html"><div class=" botao-entrar btn">
+                Voltar
+              </div>
+              </a>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="jquery.mask.js"></script>
+
+	<script>
+	
+		$(document).ready(function(){
+		    $("#cpfcri").mask("000.000.000-00");
+   		    $("#nascimentocri").mask("00/00/0000");
+
+		});			
+	
+  </script>
+  
+</body>
+</html>

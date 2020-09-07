@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folhas Vivas - Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="style-cadastro.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="cadastro-responsavel.js"></script>
+</head>
+
+<body class="body">
+    <div class="tuca-topo">
+        <img src="images/tuca sem cauda.png" alt="tucano" class="tuca-sem-cauda">
+    </div><!--   
+    --><div class="quadro-branco"><!--
+    --><div class="cauda-tuca">
+            <img class="cauda" src="images/cauda tuca.png" alt="cauda tucano">
+        </div>
+        <div class="cabecalho">
+            <figure id= "folha1" class="folhas">
+                <img class="img-folhas" src="images/folhas2.png" alt="folhas">
+            </figure>
+            <span id= "resp" class="folhas responsavel"> Responsável </span>
+            <figure id= "folha2"class="folhas">
+                <img class="img-folhas" src="images/folhas.png" alt="folhas">
+            </figure>
+        </div>
+        <div class="formulario">
+
+            <form method="post" action="cadastrarresp.php" name="logon">
+              <div class="row">
+                <div class="col-25">
+                  <label for="nome">Nome Completo</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="txtnome" required id="nome" placeholder="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="nascimento">Data de nascimento</label>
+                </div>
+                <div class="col-75">
+                <input name="txtnascimento" type="text" required id="nascimento">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="txtemail" required id="email" placeholder="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="cpf">CPF</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="txtcpf" required id="cpf" placeholder="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="usuario">Nome de usuário</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="txtusuario" required id="usuario" placeholder="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="senha">Senha</label>
+                </div>
+                <div class="col-75">
+                  <input type="password" name="txtsenha" required id="senha"placeholder="">
+                </div>
+              </div>
+
+              <div class="button">
+            <button type="submit" class=" botao-entrar btn">
+						  Confirmar
+            </button>
+            <br/>
+            <br/>
+            <a href="login.html"><div class=" botao-entrar btn">
+						  Voltar
+            </div>
+            </a>
+          </div>
+            </form>
+
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="jquery.mask.js"></script>
+
+    <script>
+	
+		$(document).ready(function(){
+		    $("#cpf").mask("000.000.000-00");
+   		    $("#nascimento").mask("00/00/0000");
+
+		});			
+	
+  </script>
+  
+</body>
+</html>
+

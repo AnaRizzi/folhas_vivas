@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    color: #888a8a
+}
+
+body {
+    background-image: url(images/fundo_celular.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    background-repeat: repeat;
+    text-align: center;
+}
+
+.mico-topo {
+    position: relative;
+    display: block;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-bottom:-10px;
+    padding: 0;
+    z-index: 999;
+}
+
+.cabeca-mico {
+    width: 21%;
+    margin: 10% 0 0 0;
+}
+
+.braco-mico {
+    position: relative;
+    display: block;
+    margin: -15px 20px 0 18px;
+    z-index: 222;
+    padding: 0;
+}
+
+.braco {
+    width: 17%;
+    margin-top: 0;
+}
+
+.quadro-branco {
+    display: block;
+    width: 80%;
+    min-height: 90vh;
+    max-height: 120vh;
+    background-color: white;
+    margin: 0 10% 0 10%;
+    border: solid 10px white;
+    border-radius: 50px 50px 0 0;
+    text-align: center;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 0vw ;
+    text-align: center;
+    align-items: center;
+}
+
+.folhas {
+    margin: 0;
+}
+
+.img-folhas {
+    width: 90%;
+}
+
+#passaporte {
+    width: 82%;
+    margin: 0;
+    padding: 0
+    text-align: center;
+    color: #324423;
+    font-size: 4.1vw;
+
+}
+
+#folha1 {
+    width: 14%;
+    margin-top: 4vw;
+    padding: 0
+}
+
+#folha2 {
+    width: 14%;
+    margin-top: 4vw;
+    padding: 0
+}
+
+.formulario {
+    align-content: center;
+    text-align: left;
+    padding: 0 7%;
+    font-size: 2.9vw
+}
+
+input[type=text], select, textarea, input[type="password"]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+ 
+label {
+    padding: 4px 0 2px 0;
+    display: inline-block;
+}
+  
+.col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#orgaoEmiss,
+#avatar {
+    font-size: 4vw;
+    color: #324423;
+    padding: 4vw 0 5vw 0;
+}
+
+.carrossel {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.imgCarrossel {
+    display: inline-block;
+}
+
+#setaE,
+#setaD {
+    width: 3%;
+}
+
+#tuca{
+    width: 42%
+}
+
+#mico {
+    width: 25%
+}
+
+.button {
+    text-align: right;
+    border: 1px;
+    width: 100%
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 16px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(100, 153, 65);
+    border: none;
+    border-radius: 7px;
+    margin: 20px 0 5px 0;
+    width: 50%;
+    font-size: 4.8vw
+  }
+  
+.btn:hover {background-color: rgb(118, 170, 76)}
+  
+.btn:active {
+    background-color: rgb(126, 184, 88);
+    transform: translateY(4px); }
+  
+@media screen and (max-width: 600px) {
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+}
