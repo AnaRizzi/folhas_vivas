@@ -16,7 +16,7 @@ body {
     height: 100vh;
     padding: 7px;
     color: rgb(57, 77, 40);
-    font-size: 23px
+    font-size: 20px
 
 }
 
@@ -37,8 +37,8 @@ body {
 .botao-entrar {
     text-align: center;
     background-color: #879b4d;
-    width: 70%;
-    height: 55px;
+    width: 60%;
+    height: 46px;
     font-size: 8vw;
     font-weight: 370
 }
@@ -54,14 +54,12 @@ body {
     border: none;
     border-radius: 10px;
     margin-bottom: 5px;
-    width: 40%
-    overflow: visible;
 }
 
 .botao-cadastro {
     background-color: #324423;
-    width: 70%;
-    height: 55px;
+    width: 60%;
+    height: 46px;
     font-size: 8vw;
     font-weight: 300
 }
@@ -77,11 +75,11 @@ body {
 }
 
 #fb {
-    width: 70%
+    width: 60%
 }
 
 #google {
-    width: 70%
+    width: 60%
 }
 
 .folha-e {
