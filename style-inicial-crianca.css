@@ -29,6 +29,7 @@ body {
      margin: 3vh 0 3vh 8vw;
  }
 
+
  #local-nome {
      width: 50%;
      margin: 5vh 3% 10px 47%;
@@ -170,7 +171,26 @@ body {
 
 .item-m {
     width: 40%;
-    margin: 1vh
+    margin: 1vh;
+}
+
+.itemPequeno{
+    width: 30px !important;
+}
+
+.items-menu-adulto{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.items-menu-adulto a{
+    text-decoration: none;
+}
+
+.menuAdulto{
+    display: flex;
+    align-items: center;
 }
 
 #grama {
@@ -197,6 +217,35 @@ footer {
     width:100%;
     z-index: 1;
 }
+
+.img-capa{
+    width: 60%;
+}
+
+.info_livro{
+    text-align: left;
+}
+
+.exibicaolivro{
+    margin-bottom: 100px;
+}
+
+.btn_ler{
+    padding: 10px 25px;
+    font-size: 8vw;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(100, 153, 65);
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    font-weight: 100;
+}
+
+.btn_ler:hover {background-color: rgb(118, 170, 76)}
   
 @media screen and (max-width: 600px) {
 .col-25, .col-75, input[type=submit] {

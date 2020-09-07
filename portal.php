@@ -20,9 +20,11 @@
     ?>
     
     <?php
-    include 'cabecalho.php'
-    ?>
+    include 'cabecalho.php';
 
+    if ($_SESSION['STATUS'] == 2){ 
+    ?>
+        <!-- página da criança -->
     <div class="quadro-branco">
       <div class="barra de busca">
           <img src="images/busca.png" id="barra-busca">
@@ -35,7 +37,50 @@
           <img  class= "item" src="images/btn_atividades.png">
           <img  class= "item" src="images/btn_ranking.png">
       </div>
-    </div>             
+    </div> 
+
+    <?php
+    }
+    else{
+    ?>
+    <!-- página do adulto -->
+    <div class="quadro-branco">
+      <div class="barra de busca">
+          <img src="images/busca.png" id="barra-busca">
+          <span id="buscar-avent">Buscar livro</span>
+      </div>
+      <div class="items-menu-adulto">
+          <div class="menuAdulto">
+          <img class= "item itemPequeno" src="images/medalha verde.png">
+          <span">
+            Leituras em andamento
+          </span>
+            </div>
+
+            <div class="menuAdulto">
+            
+          <img class= "item itemPequeno" src="images/medalha roxa.png">
+          <a href="aventuras-disponiveis.php"><span >
+            Livros disponíveis
+          </span>
+            </a>
+            </div>
+
+            <div class="menuAdulto">
+          <img class= "item itemPequeno" src="images/medalha verde.png">
+          <span >
+            Ver atividades das crianças
+          </span>
+            </div>
+
+      </div>
+    </div> 
+
+    <?php
+    }
+    ?>
+
+                
     <footer>
         <a href="configuracoes.php"><img src="images/placa_configuracoes.png" id="placa"></a>
         <img src="images/grama.png" id="grama">
